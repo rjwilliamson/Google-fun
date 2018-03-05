@@ -3,13 +3,13 @@ function animateGoogle(name){
 	const body = document.querySelector('body');
 	body.classList.add(name);
 
-	setInterval(function(){
+	let intervals = setInterval(function(){
     
     body.classList.remove(name);
+    clearInterval(intervals);
+    
 
 	},1000);
-	
-
 
 
 }
